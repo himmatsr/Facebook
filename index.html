@@ -5,35 +5,38 @@
 	</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class = "nav">
-		<div class="logo" >
-			<h2 title="Go To Home Page">facebook</h2>
+
+<div class="d-flex .flex-row justify-content-around flex-wrap navigation ">
+	<div class="p-2 logo .flex-row align-self-end">
+      <a href="#">facebook</a>
+    </div>
+    <div class="p-2 d-flex flex-row">
+    	<div class="p-2 email">
+    		<label>Email or phone</label><br>
+		<input type="text" name="username">
+    	</div>
+    	<div class="p-2 password">
+    		<label>Password</label><br>
+		<input type="password" name="password"><br>
+		<a href="#" class="forgotten">Forgotten account?</a>
+    	</div>
+    	<div class="p-2 btn1">
+    		<button>Log In</button>
+    	</div>
+    </div>
+</div>
+<div class="container-fluid padding">
+	<div class="row padding right">
+		<div class="col-md-6 d-flex flex-column align-items-end">
+			<p class="leftpara">Facebook helps you connect and share with the<br>people in your life.</p>
+			<img class="leftimg" src="i1.png">
 		</div>
-		<div class="login" >
-			<div class = "username">
-				<label>Email or phone</label><br>
-				<input type="text" name="username">
-			</div>
-			<div class = "password">
-				<label>Password</label><br>
-				<input type="password" name="password"><br>
-				<a href="#" class="Forgotten">Forgotten account?</a>
-			</div>
-			<div class="button">
-				<button>Log In</button>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="left">
-			<p >Facebook helps you connect and share with the<br>people in your life.</p>
-			<img src="i1.png">
-		</div>
-		<div class="right">
-			<h2>Create an account</h2>
+		<div class="col-md-6 right1">
+			<h2 class="h2">Create an account</h2>
 			<p class="intro">It's quick and easy</p>
 			<form>
 				<input class="half" type="text" name="firstname" placeholder="firstname">
@@ -97,7 +100,7 @@
 					<option value="2020">2016</option>
 					<option value="2020">2015</option>
 				</select>
-				</div><br><br>
+				</div><br>
 				<label for="gender" class="text1">Gender</label><br>
 				<input type="radio" class="radio" name="gender" value="male">Male
 				<input type="radio" class="radio" name="gender" value="Female">Female
@@ -108,7 +111,8 @@
 			</form>
 		</div>
 	</div>
-	<footer>
+</div>
+<footer>
 		<div id="language">
 			<span >english(UK)</span>
 			<a href="#">ਪੰਜਾਬੀ</a>
@@ -159,4 +163,11 @@
 		</div>
 		<p>facebook &copy; 2020</p> 
 	</footer>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
