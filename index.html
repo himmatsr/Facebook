@@ -7,27 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
+<div id="showlogin"></div>
 
-<div class="d-flex .flex-row justify-content-around flex-wrap navigation ">
+<div id="bigcont">
+<div class="d-flex flex-row justify-content-around flex-wrap navigation ">
 	<div class="p-2 logo .flex-row align-self-end">
       <a href="#">facebook</a>
-    </div>
+	</div>
+
     <div class="p-2 d-flex flex-row">
     	<div class="p-2 email">
     		<label>Email or phone</label><br>
-		<input type="text" name="username">
+		<input type="text" name="username" id="loginuser" >
     	</div>
     	<div class="p-2 password">
     		<label>Password</label><br>
-		<input type="password" name="password"><br>
+		<input type="password" name="password" id="loginpass"><br>
 		<a href="#" class="forgotten">Forgotten account?</a>
     	</div>
     	<div class="p-2 btn1">
-    		<button>Log In</button>
+    		<button id ="loginbtn" onclick="loginfunc()">Log In</button>
     	</div>
-    </div>
+	</div>
+
 </div>
 <div class="container-fluid padding">
 	<div class="row padding right">
@@ -38,11 +43,11 @@
 		<div class="col-md-6 right1">
 			<h2 class="h2">Create an account</h2>
 			<p class="intro">It's quick and easy</p>
-			<form>
-				<input class="half" type="text" name="firstname" placeholder="firstname">
-				<input class="half" type="text" name="lastname" placeholder="lastname"><br>
-				<input class="full" type="text" name="email" placeholder="Mobile number or email address"><br>
-				<input class="full" type="text" name="password" placeholder="new password"><br><br>
+			<!-- <form > -->
+				<input class="half" type="text" id ="fname" name="firstname" placeholder="firstname">
+				<input class="half" type="text" id ="lname" name="lastname" placeholder="lastname"><br>
+				<input class="full" type="text" id ="email" name="email" placeholder="Mobile number or email address"><br>
+				<input class="full" type="text" id = "signinpass" name="password" placeholder="new password"><br><br>
 				<label class="text1">Date of birth</label><br>
 				<div class = "select">
 				<select id="day" name="day" >
@@ -106,9 +111,9 @@
 				<input type="radio" class="radio" name="gender" value="Female">Female
 				<input type="radio" class="radio" name="gender" value="Custom">Custom<br>
 				<p class="term">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and<br> <a href="#">Cookie Policy</a>. You may receive SMS notifications from us and<br> can opt out at any time</p>
-				<button id="signup">Sign Up</button>
+				<button id="signup" onclick="signinfunc()">Sign Up</button>
 				<p class="createpage"><a href="">Create a Page</a> for a celebrity, band or business.</p>
-			</form>
+			<!-- </form> -->
 		</div>
 	</div>
 </div>
@@ -170,4 +175,5 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</div>
 </body>
