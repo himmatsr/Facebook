@@ -1,4 +1,7 @@
 
+
+
+
 .navigation{
 	background-color:rgb(59, 89, 152);
 }
@@ -101,8 +104,8 @@ select{
 	background-color:rgb(105, 167, 78);
 	border:1px solid rgb(59, 110, 34);
 	color:white;
-	font-family:Freight Sans Bold", Helvetica, Arial, sans-serif;
-	padding:20px;
+	font-family:"Freight Sans Bold", Helvetica, Arial, sans-serif;
+	padding:2px;
 	width:194px;
 	text-align:center;
 	font-weight:700;
@@ -277,4 +280,12 @@ a{
 #language a:hover , #links a:hover, a:hover{
 	color: #87AFC7;
 	text-decoration:underline;
+}
+
+
+
+#showlogin{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

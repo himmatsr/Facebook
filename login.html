@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>login page</title>
+    
+</head>
+<body>
+    <div id = "heading">
+
+    </div>
+    <script>
+        var getdata = localStorage.getItem("logindata");
+        var getparsedata = JSON.parse(getdata);
+        console.log(getparsedata);
+        var headtag = document.getElementById("heading");
+        headtag.innerHTML = `<h1>Username: ${getparsedata.username} <br> Password: ${getparsedata.password}</h1>`
+    </script>
+</body>
+</html>

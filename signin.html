@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>SignIn page</title>
+    
+</head>
+<body>
+    <div id = "heading">
+
+    </div>
+    <script>
+        var getdata = localStorage.getItem("signindata");
+        var data = JSON.parse(getdata);
+        heading=document.getElementById("heading");
+        heading.innerHTML = `<table style="font-weight:bold; border: 2px solid black; font-size:25px;">
+    <tr><td>Data</td><td>Value</td></tr>
+    <tr><td>FirstName</td><td>${data.firstname}</td></tr>
+    <tr><td>LastName</td><td>${data.lastname}</td></tr>
+    <tr><td>email</td><td>${data.email}</td></tr>
+    <tr><td>password</td><td>${data.password}</td></tr>
+    <tr><td>birthday</td><td>${data.birthday}</td></tr>
+    <tr><td>Gender</td><td>${data.gender}</td></tr>
+    </table>`
+    </script>
+</body>
+</html>
